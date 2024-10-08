@@ -26,6 +26,25 @@
     url('../fonts/zona-pro/ZonaProExtraLight.svg#ZonaProExtraLight') format('svg');
 }
 
+@font-face {
+    font-family: 'ZonaPro-SemiBold';
+    src: url('../fonts/zona-pro/ZonaPro-SemiBold.eot');
+    src: url('../fonts/zona-pro/ZonaPro-SemiBold.eot') format('embedded-opentype'),
+    url('../fonts/zona-pro/ZonaPro-SemiBold.woff2') format('woff2'),
+    url('../fonts/zona-pro/ZonaPro-SemiBold.woff') format('woff'),
+    url('../fonts/zona-pro/ZonaPro-SemiBold.ttf') format('truetype'),
+    url('../fonts/zona-pro/ZonaPro-SemiBold.svg#ZonaPro-SemiBold.svg') format('svg');
+}
+@font-face {
+    font-family: 'ZonaPro-Regular';
+    src: url('../fonts/zona-pro/ZonaPro-Regular.eot');
+    src: url('../fonts/zona-pro/ZonaPro-Regular.eot') format('embedded-opentype'),
+    url('../fonts/zona-pro/ZonaPro-Regular.woff2') format('woff2'),
+    url('../fonts/zona-pro/ZonaPro-Regular.woff') format('woff'),
+    url('../fonts/zona-pro/ZonaPro-Regular.ttf') format('truetype'),
+    url('../fonts/zona-pro/ZonaPro-Regular.svg#ZonaPro-Regular.svg') format('svg');
+}
+
 
 :root {
     --primary-color: rgba(15, 47, 120, 1);
@@ -41,6 +60,7 @@
 
 body {
     font-size: 16px;
+    background-color: #5690B3;
 }
 
 
@@ -64,6 +84,64 @@ h2 {
 /* -----------------------------------------------------*/
 /* ------------------ HEADER ---------------------------*/
 /* -----------------------------------------------------*/
+.header{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    width: max-content;
+    background-color: aqua;
+    
+}
+
+
+#raw1{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 20px;
+}
+#raw1 nav{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background-color: white;
+}
+
+#raw1 nav a{
+    font-size: 1em;
+    text-decoration: none;
+}
+#candidat{
+    font-family: 'ZonaPro-SemiBold';
+    color: rgb(22, 49, 116);
+}
+#helps{
+    font-family: 'ZonaPro-Regular';
+    font-size: 12px/17px;
+    color: #707070;
+}
+#raw2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+#raw2 img{
+    padding: 10px;
+    width: 5%;
+}
+#raw2 nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#raw2 nav a{
+    font-size: 1em;
+    text-decoration: none;
+    font-family: 'ZonaPro-SemiBold';
+    color: white;
+}
 
 /* -----------------------------------------------------*/
 /* ---------------- END HEADER -------------------------*/
