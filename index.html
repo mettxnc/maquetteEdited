@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/globalStyle.css">
+    <link rel="stylesheet" href="assets/css/homeSliderStyles.css">
+
+    <script src="assets/js/homeSlider.js"></script>
     <meta name="description" content="">
 </head>
 <body>
@@ -79,6 +82,13 @@
     <!-- ------------------------------------------------------>
     <header>
         <div id="home-slider">
+            <img src="assets/img/1.jpg" id="slide">
+            <div id="containerChoice">
+                <div id="recrutement" class="test" onclick="ChangeSlide('recrutement')">RECRUTEMENT</div>
+                <div id="interim" class="test" onclick="ChangeSlide('interim')">INTERIM</div>
+                <div id="performance" class="test" onclick="ChangeSlide('performance')">PERFORMANCE</div>
+                <div id="transformation" class="test" onclick="ChangeSlide('transformation')">TRANSFORMATION</div>
+            </div>
         </div>
     </header>
     <!-- ------------------------------------------------------>

@@ -1,0 +1,22 @@
+#home-slider{
+    position: relative;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+}
+#slide{
+    width: 1200px;
+}
+#containerChoice{
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+#containerChoice div{
+    background-color: white;
+    padding: 30px;
+    font-family: 'ZonaPro-SemiBold';
+}
