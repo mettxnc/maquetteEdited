@@ -1,13 +1,11 @@
+
 #home-slider{
     position: relative;
-    width: 1200px;
-    margin: auto;
     display: flex;
-    align-items: center;
 
 }
 #slide{
-    width: 1200px;
+    width: 1700px;
 }
 #containerChoice{
     display: flex;
@@ -15,8 +13,9 @@
     left: 0;
     bottom: 0;
 }
-#containerChoice div{
+#containerChoice button{
     background-color: white;
     padding: 30px;
+    border: none;
     font-family: 'ZonaPro-SemiBold';
 }
