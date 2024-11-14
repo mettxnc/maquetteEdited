@@ -60,7 +60,7 @@
 
 body {
     font-size: 16px;
-    background-color: #5690B3;
+    background-color: white;
 }
 
 
@@ -89,23 +89,50 @@ h2 {
     flex-direction: row-reverse;
     flex-wrap: wrap;
     width: max-content;
-    background-color: aqua;
-    
 }
 
 
 #raw1{
+    position: relative;
     display: flex;
     justify-content: flex-end;
     flex-wrap: nowrap;
     align-items: center;
     margin: 20px;
+    z-index: 2;
 }
 #raw1 nav{
     display: flex;
     align-items: center;
     gap: 50px;
+    padding: 20px;
+    position: relative;  
     background-color: white;
+}
+.raw1 nav::before {  
+    content: '';  
+    display: block;  
+    height: 100%;  
+    width: 100%;  
+    position: absolute;    
+    top: 0;  
+    left: 0;  
+    background: inherit;  
+    transform: skew(20deg, 0);  
+    transform-origin: top left;
+}
+.raw1 nav::after {  
+    content: '';  
+    display: block;  
+    height: 100%;  
+    width: 100%;  
+    position: absolute;  
+    z-index: -1;  
+    top: 0;  
+    left: 0;  
+    background: inherit;  
+    transform: skew(-2deg,0);  
+    transform-origin: bottom right;
 }
 
 #raw1 nav a{
@@ -122,10 +149,12 @@ h2 {
     color: #707070;
 }
 #raw2{
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    margin: 10px;
+    z-index: 3;
 }
 #raw2 img{
     padding: 10px;
@@ -141,6 +170,15 @@ h2 {
     text-decoration: none;
     font-family: 'ZonaPro-SemiBold';
     color: white;
+}
+#search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+#search a img{
+    width: 65%;
 }
 
 /* -----------------------------------------------------*/
