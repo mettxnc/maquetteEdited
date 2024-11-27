@@ -98,7 +98,6 @@ h2 {
     justify-content: flex-end;
     flex-wrap: nowrap;
     align-items: center;
-    margin: 20px;
     z-index: 2;
 }
 #raw1 nav{
@@ -106,34 +105,12 @@ h2 {
     align-items: center;
     gap: 50px;
     padding: 20px;
+    padding-left: 50px;
     position: relative;  
     background-color: white;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10% 100%);
 }
-.raw1 nav::before {  
-    content: '';  
-    display: block;  
-    height: 100%;  
-    width: 100%;  
-    position: absolute;    
-    top: 0;  
-    left: 0;  
-    background: inherit;  
-    transform: skew(20deg, 0);  
-    transform-origin: top left;
-}
-.raw1 nav::after {  
-    content: '';  
-    display: block;  
-    height: 100%;  
-    width: 100%;  
-    position: absolute;  
-    z-index: -1;  
-    top: 0;  
-    left: 0;  
-    background: inherit;  
-    transform: skew(-2deg,0);  
-    transform-origin: bottom right;
-}
+
 
 #raw1 nav a{
     font-size: 1em;
@@ -153,8 +130,8 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px;
     z-index: 3;
+    padding-left: 100px;
 }
 #raw2 img{
     padding: 10px;
@@ -163,7 +140,7 @@ h2 {
 #raw2 nav{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 80px;
 }
 #raw2 nav a{
     font-size: 1em;

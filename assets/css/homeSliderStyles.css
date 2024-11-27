@@ -18,8 +18,9 @@
 }
 #containerChoice button{
     background-color: white;
-    padding: 30px;
+    padding: 50px;
     border: none;
     font-family: 'ZonaPro-SemiBold';
+    font-size: 1.1em;
 }
 
